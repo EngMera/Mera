@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;800&display=swap');
-/* Start Global Rules */
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400&display=swap');:root{
     --main-color:#2196f3;
     --main-color-alt:#238de4;
     --main-transition: 0.3s;
@@ -16,7 +14,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Almarai';
+    font-family: 'Lato';
 }
 ul{
     list-style: none;
@@ -76,9 +74,21 @@ a{
     justify-content: center;
     align-items: center;
 }
+@media (max-width:767px){
+    .header .logo{
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+    }
+}
 .header .main-nav{
     display: flex;
     
+}
+@media (max-width:767px){
+    .header .main-nav{
+       margin: auto;
+    }
 }
 
 .header .main-nav > li > a{
@@ -88,9 +98,17 @@ a{
     height: 68px;
     position: relative;
     color: black;
+    font-style: italic;
     padding: 0 30px;
     overflow: hidden;
     transition:var(--main-transition);
+}
+@media (max-width:767px){
+    .header .main-nav > li > a{
+        padding: 10px;
+        height: 30px;
+        font-size: 14px;
+    }
 }
 .header .main-nav > li > a::before{
     content: '';
@@ -111,3 +129,6 @@ a{
     left: 0;
 }
 /* End Header */
+/* Start Landing Page */
+
+/* End Landing Page */
